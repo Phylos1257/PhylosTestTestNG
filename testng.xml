@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--<suite name="All test suite">-->
+<suite name="All test suite" data-provider-thread-count="5" parallel="methods" thread-count="6">
+	<!--	<test name="CucumberRunner" thread-count="4"> -->
+	<test name="CucumberRunner">
+		<classes>
+			<class name="steps.UITestRunnerTestNG"/>
+			<!--<class name="runners2.RunFailedTestNG"/>-->
+			<!--<class name="runners2.RemoteRunner"/>-->
+		</classes>
+	</test>
+	<!--<class name="support for retry failed case when run as 'mvn test'"/>-->
+	<listeners>
+		<listener class-name="failedTestCases.AnnotationTransformer"/>
+	</listeners>
+
+</suite>
