@@ -4,7 +4,7 @@ TestNG Selenium cucumber
 
 2 re-run failed error automatically
 
-3 cucumber7 report 
+3 cucumber7 report /allure report
 
 4 remote selenium grid
 
@@ -31,6 +31,9 @@ test report
 extent.reporter.spark.out=target/ExtentReports/TestAutomationDestinationDemo.html
 ![image](https://github.com/user-attachments/assets/c4e0cfda-c47f-4dd8-89a1-a41fd5e7ff4f)
 
+------------------
+test report for allure report
+https://allurereport.org/docs/cucumberjvm/
 
 
 
