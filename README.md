@@ -12,7 +12,15 @@ TestNG Selenium cucumber
 
 -----------------
 1 build the project
-2 run the testng.xml as testng runner
+2 run the case:
+   1 right click testng.xml as testng runner 
+   1 mvn test // 通过maven run pom.xml
+
+-------------------
+test report
+extent.reporter.spark.out=target/ExtentReports/TestAutomationDestinationDemo.html
+![image](https://github.com/user-attachments/assets/c4e0cfda-c47f-4dd8-89a1-a41fd5e7ff4f)
+
 
 
 
