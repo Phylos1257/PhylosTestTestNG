@@ -11,10 +11,14 @@ TestNG Selenium cucumber
 5 picocontainer construct inject
 
 -----------------
-1 build the project
-2 run the case:
-   1 right click testng.xml as testng runner 
-   1 mvn test // 通过maven run pom.xml
+  run the case:
+1 right click testng.xml as testng runner 
+maven cmd line:
+1 mvn clean test
+2 mvn clean test -DxmlFileName=testng.xml
+3 mvn test -Dcucumber.filter.tags=@aut_PPtest
+4 mvn clean test -Dcucumber.features=src/test/resources/features/loginOrangehrmlive.feature
+
 
 -------------------
 test report
