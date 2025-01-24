@@ -10,3 +10,9 @@ TestNG Selenium cucumber
 
 5 picocontainer construct inject
 
+-----------------
+1 build the project
+2 run the testng.xml as testng runner
+
+
+

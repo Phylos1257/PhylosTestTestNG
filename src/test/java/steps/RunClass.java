@@ -13,6 +13,7 @@ tags = "@tag")
 //---- other plugin format 
 // plugin = {"pretty", "json:target/cucumber.json"}
 // plugin = {"pretty", "junit:target/cucumber.xml"}
+// this for junit test example runner
 public class RunClass {
 
 	 

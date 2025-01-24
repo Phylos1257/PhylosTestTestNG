@@ -20,9 +20,9 @@ Feature: Title of your feature
   #Scenario: Vist the google test5
     #Given I want to vist the google for TestNG
     #
-  #@reTryTest  @testNG
-   #Scenario: Vist the google test6
-    #Given I want to vist the google failed
+  @reTryTest  @testNG
+   Scenario: Vist the google test6
+    Given I want to vist the google failed
    
    # forParralelReTryTest 
       @reTryTest 
