@@ -94,7 +94,7 @@
 	                <groupId>org.apache.maven.plugins</groupId>
 	                <artifactId>maven-surefire-plugin</artifactId>
 	                <version>3.5.2</version>
-	                <configuration>
+	                <configuration> 
 	                	<!--这部分是原来给Junit parallel 的相关配置，增加了TestNG后，这部分Runner会启动chrome失败，注释掉为了给testNG 配置 -->
 	                   <!-- <includes>**/steps/RunClass.java</includes>
 	                    <parallel>methods</parallel>

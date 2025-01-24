@@ -37,7 +37,7 @@ public class UITestRunnerTestNG extends AbstractTestNGCucumberTests {
 	@BeforeClass
 	public void beforeClass(ITestContext context) {
 		System.out.println("before execution of class");
-		// 这里会覆盖testng.xml data-provider-thread-count 的配置
+		// here will override the testng.xml data-provider-thread-count 
 		//context.getCurrentXmlTest().getSuite().setDataProviderThreadCount(5);
 	}
 

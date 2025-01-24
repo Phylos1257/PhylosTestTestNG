@@ -5,8 +5,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import context.PageContext;
-import factory.CreateDriver;
+import context.PageContext; 
 import factory.DriverFactory;
 import io.cucumber.java.BeforeStep;
 import io.cucumber.java.After;
@@ -37,8 +36,10 @@ public class Hooks {
 	@Before
 	public void setUp(Scenario scenario) {
 		System.out.println("before setUp");
-		System.out.println(
-				"BEFORE: THREAD ID : " + Thread.currentThread().threadId()+ "," + "SCENARIO NAME: " + scenario.getName());
+		// the mvn clean test will failed with java.lang.Thread class not found error, 
+		// local run from testng.xml show without error
+		//System.out.println("BEFORE: THREAD ID : '{}'" +Thread.currentThread().threadId() + "," + "SCENARIO NAME: " + scenario.getName());
+		System.out.println("BEFORE: SCENARIO NAME: " + scenario.getName());
 		//(System.getProperty(PARAMETER_BROWSER,  BROWSER_CHROME));
 		//CreateDriver.getDriver();
 		driver = DriverFactory.initializeDriver("chrome");
@@ -46,9 +47,8 @@ public class Hooks {
 	}
 	@After()
 	public void tearDown(Scenario scenario) {
-		System.out.println(
-				"AFTER: THREAD ID : " + Thread.currentThread().threadId() + "," + "SCENARIO NAME: " + scenario.getName());
- 
+		//System.out.println("AFTER: THREAD ID : " + Thread.currentThread().threadId() + "," + "SCENARIO NAME: " + scenario.getName());
+		System.out.println("AFTER: SCENARIO NAME: " + scenario.getName());
 		//CreateDriver.closeDriver();;
 
 		driver.quit();

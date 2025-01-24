@@ -20,14 +20,14 @@ Feature: Title of your feature
   #Scenario: Vist the google test5
     #Given I want to vist the google for TestNG
     #
-  @reTryTest  @testNG
-   Scenario: Vist the google test6
-    Given I want to vist the google failed
+  #@reTryTest  @testNG
+   #Scenario: Vist the google test6
+    #Given I want to vist the google failed
    
    # forParralelReTryTest 
-      @reTryTest 
-   Scenario: Vist the google test7
-    Given I want to vist the google failed
+      #@reTryTest 
+   #Scenario: Vist the google test7
+    #Given I want to vist the google failed
     
      @remoteUn  
   Scenario: Vist the google test from selenium grid
