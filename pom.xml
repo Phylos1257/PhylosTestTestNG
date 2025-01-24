@@ -3,6 +3,22 @@
   <groupId>com.cucumber.test</groupId>
   <artifactId>CucumberFreamworkTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+    <allure.version>2.24.0</allure.version>
+  </properties>
+  <!-- Add allure-bom to dependency management to ensure correct versions of all the dependencies are used -->
+	<dependencyManagement>
+	    <dependencies>
+	        <dependency>
+	            <groupId>io.qameta.allure</groupId>
+	            <artifactId>allure-bom</artifactId>
+	            <version>${allure.version}</version>
+	            <type>pom</type>
+	            <scope>import</scope>
+	        </dependency>
+	    </dependencies>
+	</dependencyManagement>
+
     <dependencies>
 	  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 		<dependency>
@@ -84,7 +100,16 @@
 		    <version>2.1.0-alpha1</version>
 		    <scope>test</scope>
 		</dependency> -->
-
+	 	<dependency>
+	        <groupId>io.qameta.allure</groupId>
+	        <artifactId>allure-cucumber7-jvm</artifactId>
+	        <scope>test</scope>
+	    </dependency>
+	    <dependency>
+	        <groupId>io.qameta.allure</groupId>
+	        <artifactId>allure-testng</artifactId>
+	        <scope>test</scope>
+	    </dependency>
    </dependencies>
    
     <build>

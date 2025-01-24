@@ -7,10 +7,12 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 // here is the CucumberOptions should be testng
 import io.cucumber.testng.CucumberOptions;
 
+//"
+//plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","rerun:target/failed.txt"})
 @CucumberOptions(features="src/test/resources",
 		glue= {"steps","hook"},
 		tags = "@testNG",
-		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","rerun:target/failed.txt"})
+		plugin = {"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm","rerun:target/failed.txt"})
 public class UITestRunnerTestNG extends AbstractTestNGCucumberTests {
 
 	public UITestRunnerTestNG() {
